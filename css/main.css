@@ -172,6 +172,8 @@ nav .nav-container .contact p {
 }
 
 .health-products-container .health-products-title {
+  display: block;
+  text-decoration: none;
   background: #fedbe8;
   text-align: center;
   font-size: 18px;
@@ -198,6 +200,8 @@ nav .nav-container .contact p {
 }
 
 .fashion-products-container .fashion-products-title {
+  text-decoration: none;
+  display: block;
   background: #fedbe8;
   text-align: center;
   font-size: 18px;
