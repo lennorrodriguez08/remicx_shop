@@ -1,0 +1,518 @@
+@import 'default';
+@import 'variables';
+@import 'utilitiesMixins';
+
+// NAVIGATION ===============
+
+nav {
+    background: $strong-pink;
+
+    .nav-container {
+        padding: 15px 20px;
+        @include flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo img {
+            width: 100%;
+            max-width: 140px;
+        }
+    
+        .contact {
+            @include flex;
+            align-items: center;
+    
+            .contact-icon img {
+                max-width: 30px;
+            }
+    
+            p {
+                color: $white;
+                font-size: 16px;
+                padding-left: 10px;
+            }
+    
+        }
+
+    }
+    
+}
+
+// END OF NAVIGATION ===============
+
+// START OF HEADER ===============
+
+.header-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    background: $light-pink;
+    padding: 40px;
+
+    .header-sub-container {
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .hero-text {
+            padding-left: 40px;
+
+            h1 {
+                font-size: 32px;
+                font-weight: 900;
+                color: $strong-pink;
+                text-shadow: 3px 5px 1px #fff;
+            }
+        }
+
+        .hero-img {
+
+            img {
+                width: 100%;
+                max-width: 500px;
+
+            }
+        }
+    }
+}
+
+// END OF HEADER ===============
+
+// START OF PRODUCT CATEGORIES ===============
+
+.product-categories-container {
+    padding: 0 20px 50px;
+
+    .product-categories-title {
+        font-size: 22px;
+        font-weight: 500;
+        background: $strong-pink;
+        display: inline-block;
+        padding: 8px 12px;
+        color: $white;
+        margin-bottom: 40px;
+    }
+
+    .health-related-container {
+        @include flex;
+        align-items: center;
+
+        a {
+            padding-left: 10px;
+            font-size: 18px;
+            color: $light-gray;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: $strong-pink;
+            }
+        }
+    }
+
+    .fashion-container {
+        margin-top: 10px;
+        @include flex;
+        align-items: center;
+
+        a {
+            padding-left: 10px;
+            font-size: 18px;
+            color: $light-gray;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: $strong-pink;
+            }
+        }
+    }
+}
+
+// END OF PRODUCT CATEGORIES ===============
+
+// START OF HEALTH PRODUCTS ===============
+
+.product-name {
+    color: $strong-pink!important;
+    font-weight: 500;
+}
+
+.product-box {
+    padding-bottom: 50px;
+}
+
+.product-img-fluid {
+    max-width: 350px;
+    width: 100%;
+}
+
+.health-products-container {
+
+    .health-products-title {
+        background: $light-pink;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: $strong-pink;
+        padding: 15px 0;
+    }
+
+    p {
+        color: $light-gray;
+    }
+
+    .health-products-sub-container {
+        padding: 50px 0 0;
+        max-width: 780px;
+        margin: 0 auto;
+        @include grid;
+        grid-template-columns: 45% 45%;
+        justify-content: space-evenly;
+        
+        
+    }
+}
+
+// END OF HEALTH PRODUCTS ===============
+
+// START OF FASHION PRODUCTS ===============
+
+.fashion-products-container {
+
+    .fashion-products-title {
+        background: $light-pink;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: $strong-pink;
+        padding: 15px 0;
+    }
+
+    p {
+        color: $light-gray;
+    }
+
+    .fashion-products-sub-container {
+        padding: 50px 0 0;
+        max-width: 780px;
+        // background: orange;
+        margin: 0 auto;
+        @include grid;
+        grid-template-columns: 45% 45%;
+        justify-content: space-evenly;
+        
+        
+    }
+}
+
+// END OF FASHION PRODUCTS ===============
+
+// START OF OTHER PRODUCTS TITLE 
+
+.other-products-title {
+    text-align: center;
+    font-size: 24px;
+    color: $strong-pink;
+    padding: 50px 20px 70px;
+}
+
+// END OF OTHER PRODUCTS TITLE 
+
+// START OF RESELLER SECTION ===============
+
+.reseller-section {
+    padding-bottom: 90px;
+
+    .reseller-img {
+        padding-bottom: 20px;
+
+        img {
+            width: 100%;
+            max-width: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    p {
+        text-align: center;
+        color: $strong-pink;
+    }
+}
+
+// END OF RESELLER SECTION ===============
+
+// START OF FOOTER ===============
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    background: $strong-pink;
+    color: $white;
+    padding: 20px;
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+// MAX-WIDTH 940PX
+
+@media (max-width: 940px) {
+
+    // START OF HEADER ===============
+
+.header-container {
+    padding: 20px;
+
+    .header-sub-container {
+
+        .hero-text {
+            padding-left: 0px; // CHANGE
+        }
+    }
+}
+
+// END OF HEADER ===============
+
+}
+
+
+
+// MAX-WIDTH 830PX
+
+@media (max-width: 830px) {
+
+    // START OF HEADER ===============
+
+.header-container {
+    padding: 20px; // CHANGE
+
+    .header-sub-container {
+        flex-direction: column; // ADDED
+        justify-content: center; // ADDED
+        
+        .hero-text {
+
+            h1 {
+                text-align: center; // ADDED
+                padding-bottom: 20px; // ADDED
+
+            }
+        }
+    }
+}
+
+// END OF HEADER ===============
+
+}
+
+
+
+// MAX-WIDTH 500PX
+
+@media (max-width: 500px) {
+
+    // NAVIGATION ===============
+
+nav {
+
+    .nav-container {
+        flex-direction: column; // ADDED
+
+        .logo img {
+            padding-bottom: 5px; // ADDED
+            max-width: 120px; // CHANGE
+        }
+    
+        .contact {
+    
+            .contact-icon img {
+                max-width: 30px; // CHANGE
+            }
+    
+            p {
+                font-size: 14px; // CHANGE;
+            }
+        }
+    }
+}
+
+// END OF NAVIGATION ===============
+
+// START OF HEADER ===============
+
+.header-container {
+    margin: 30px auto;
+
+    .header-sub-container {
+
+        .hero-text {
+
+            h1 {
+                font-size: 26px; // CHANGE
+        
+            }
+        }
+    }
+}
+
+// END OF HEADER ===============
+
+// START OF PRODUCT CATEGORIES ===============
+
+.product-categories-container {
+    padding: 0 20px 30px; // CHANGE BOTTOM
+
+    .product-categories-title {
+        font-size: 16px; // CHANGE
+        margin-bottom: 20px; // CHANGE
+    }
+
+    .health-related-container {
+
+        a {
+            font-size: 14px; // CHANGE
+        }
+    }
+
+    .fashion-container {
+
+        a {
+            font-size: 14px; // CHANGE
+        }
+    }
+}
+
+// END OF PRODUCT CATEGORIES ===============
+
+// START OF HEALTH PRODUCTS ===============
+
+.health-products-container {
+
+    .health-products-title {
+        font-size: 16px; // CHANGE
+    }
+
+    p {
+        font-size: 14px; // CHANGE
+        text-align: center; // ADDED
+    }
+
+    .health-products-sub-container {
+        padding: 30px 0 0; // CHANGE
+        grid-template-columns: 90%; // CHANGE  
+        
+    }
+}
+
+// END OF HEALTH PRODUCTS ===============
+
+// START OF FASHION PRODUCTS ===============
+
+.fashion-products-container {
+
+    .fashion-products-title {
+        font-size: 16px; // CHANGE
+    }
+
+    p {
+        color: $light-gray;
+        font-size: 14px; // ADDED
+        text-align: center; // ADDED
+    }
+
+    .fashion-products-sub-container {
+        padding: 30px 0 0; // CHANGE BOTTOM
+        grid-template-columns: 90%;
+        
+    }
+}
+
+// END OF FASHION PRODUCTS ===============
+
+// START OF OTHER PRODUCTS TITLE 
+
+.other-products-title {
+    font-size: 18px; // CHANGE
+}
+
+// END OF OTHER PRODUCTS TITLE 
+
+// START OF RESELLER SECTION ===============
+
+.reseller-section {
+    padding-bottom: 90px;
+
+    .reseller-img {
+        padding-bottom: 20px;
+
+        img {
+            width: 100%;
+            max-width: 100px; // CHANGE
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    p {
+        text-align: center;
+        color: $strong-pink;
+    }
+}
+
+// END OF RESELLER SECTION ===============
+
+.product-img-fluid {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.product-box {
+    padding-bottom: 30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

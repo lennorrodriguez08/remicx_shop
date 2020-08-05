@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container-max-1100 {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+nav {
+  background: #fb4c8e;
+}
+
+nav .nav-container {
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-container .logo img {
+  width: 100%;
+  max-width: 140px;
+}
+
+nav .nav-container .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav-container .contact .contact-icon img {
+  max-width: 30px;
+}
+
+nav .nav-container .contact p {
+  color: #fff;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  background: #fedbe8;
+  padding: 40px;
+}
+
+.header-container .header-sub-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container .header-sub-container .hero-text {
+  padding-left: 40px;
+}
+
+.header-container .header-sub-container .hero-text h1 {
+  font-size: 32px;
+  font-weight: 900;
+  color: #fb4c8e;
+  text-shadow: 3px 5px 1px #fff;
+}
+
+.header-container .header-sub-container .hero-img img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.product-categories-container {
+  padding: 0 20px 50px;
+}
+
+.product-categories-container .product-categories-title {
+  font-size: 22px;
+  font-weight: 500;
+  background: #fb4c8e;
+  display: inline-block;
+  padding: 8px 12px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.product-categories-container .health-related-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-categories-container .health-related-container a {
+  padding-left: 10px;
+  font-size: 18px;
+  color: #666;
+  text-decoration: none;
+}
+
+.product-categories-container .health-related-container a:hover {
+  text-decoration: underline;
+  color: #fb4c8e;
+}
+
+.product-categories-container .fashion-container {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-categories-container .fashion-container a {
+  padding-left: 10px;
+  font-size: 18px;
+  color: #666;
+  text-decoration: none;
+}
+
+.product-categories-container .fashion-container a:hover {
+  text-decoration: underline;
+  color: #fb4c8e;
+}
+
+.product-name {
+  color: #fb4c8e !important;
+  font-weight: 500;
+}
+
+.product-box {
+  padding-bottom: 50px;
+}
+
+.product-img-fluid {
+  max-width: 350px;
+  width: 100%;
+}
+
+.health-products-container .health-products-title {
+  background: #fedbe8;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fb4c8e;
+  padding: 15px 0;
+}
+
+.health-products-container p {
+  color: #666;
+}
+
+.health-products-container .health-products-sub-container {
+  padding: 50px 0 0;
+  max-width: 780px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fashion-products-container .fashion-products-title {
+  background: #fedbe8;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fb4c8e;
+  padding: 15px 0;
+}
+
+.fashion-products-container p {
+  color: #666;
+}
+
+.fashion-products-container .fashion-products-sub-container {
+  padding: 50px 0 0;
+  max-width: 780px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.other-products-title {
+  text-align: center;
+  font-size: 24px;
+  color: #fb4c8e;
+  padding: 50px 20px 70px;
+}
+
+.reseller-section {
+  padding-bottom: 90px;
+}
+
+.reseller-section .reseller-img {
+  padding-bottom: 20px;
+}
+
+.reseller-section .reseller-img img {
+  width: 100%;
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.reseller-section p {
+  text-align: center;
+  color: #fb4c8e;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  background: #fb4c8e;
+  color: #fff;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 940px) {
+  .header-container {
+    padding: 20px;
+  }
+  .header-container .header-sub-container .hero-text {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 830px) {
+  .header-container {
+    padding: 20px;
+  }
+  .header-container .header-sub-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-container .header-sub-container .hero-text h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav .nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .nav-container .logo img {
+    padding-bottom: 5px;
+    max-width: 120px;
+  }
+  nav .nav-container .contact .contact-icon img {
+    max-width: 30px;
+  }
+  nav .nav-container .contact p {
+    font-size: 14px;
+  }
+  .header-container {
+    margin: 30px auto;
+  }
+  .header-container .header-sub-container .hero-text h1 {
+    font-size: 26px;
+  }
+  .product-categories-container {
+    padding: 0 20px 30px;
+  }
+  .product-categories-container .product-categories-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .product-categories-container .health-related-container a {
+    font-size: 14px;
+  }
+  .product-categories-container .fashion-container a {
+    font-size: 14px;
+  }
+  .health-products-container .health-products-title {
+    font-size: 16px;
+  }
+  .health-products-container p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .health-products-container .health-products-sub-container {
+    padding: 30px 0 0;
+    -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
+  }
+  .fashion-products-container .fashion-products-title {
+    font-size: 16px;
+  }
+  .fashion-products-container p {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+  }
+  .fashion-products-container .fashion-products-sub-container {
+    padding: 30px 0 0;
+    -ms-grid-columns: 90%;
+        grid-template-columns: 90%;
+  }
+  .other-products-title {
+    font-size: 18px;
+  }
+  .reseller-section {
+    padding-bottom: 90px;
+  }
+  .reseller-section .reseller-img {
+    padding-bottom: 20px;
+  }
+  .reseller-section .reseller-img img {
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  .reseller-section p {
+    text-align: center;
+    color: #fb4c8e;
+  }
+  .product-img-fluid {
+    max-width: 100%;
+    max-height: 300px;
+  }
+  .product-box {
+    padding-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
